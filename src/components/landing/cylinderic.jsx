@@ -6,11 +6,11 @@ import { useFrame } from "@react-three/fiber";
 
 const Cylinderic = () => {
   let cylendricImage = useTexture(cyl);
-  let cylImage = useRef();
+  let cylImage = useRef(); // No need to initialize with null
 
-  useFrame((delta) => {
+  useFrame((state, delta) => {
     if (cylImage.current) {
-      cylImage.current.rotation.y += delta * 0.5;
+      cylImage.current.rotation.y += delta; // Ensure cylImage.current is not null
     }
   });
 

@@ -18,9 +18,9 @@ const ThreeFiberBox = () => {
         <EffectComposer>
           <Bloom
             mipmapBlur={true}
-            intensity={1.0} // The bloom intensity.
-            luminanceThreshold={0.9} // luminance threshold. Raise this value to mask out darker elements in the scene.
-            luminanceSmoothing={0.025} // smoothness of the luminance threshold. Range is [0, 1]
+            intensity={1.0}
+            luminanceThreshold={0.9}
+            luminanceSmoothing={0.025}
           />
           <ToneMapping adaptive={true} />
         </EffectComposer>
