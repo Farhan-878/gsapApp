@@ -1,23 +1,22 @@
 import { useTexture } from "@react-three/drei";
-import React from "react";
+import React, { useRef } from "react"; // Ensure useRef is imported
 import * as THREE from "three";
-import cyl from "../../assets/cylinderic.png";
-// import { useFrame } from "@react-three/fiber";
+import cyl from "../../assets/cylthreejs.jpg";
+import { useFrame } from "@react-three/fiber";
 
 const Cylinderic = () => {
   let cylendricImage = useTexture(cyl);
-  // let cylImage = useRef(null);
+  let cylImage = useRef();
 
-  // useFrame(() => {
-  //   cylImage.current.rotation.x += 0.01;
-  //   cylImage.current.rotation.y += 0.01;
-  // });
-
-  // console.log("rotate>>>", cylImage.current.rotation.x);
+  useFrame((delta) => {
+    if (cylImage.current) {
+      cylImage.current.rotation.y += delta * 0.5;
+    }
+  });
 
   return (
     <group rotation={[0, 1.4, 0.5]}>
-      <mesh>
+      <mesh ref={cylImage}>
         <cylinderGeometry args={[1, 1, 1, 60, 60, true]} />
         <meshBasicMaterial map={cylendricImage} side={THREE.DoubleSide} />
       </mesh>
