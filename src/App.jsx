@@ -12,23 +12,42 @@ import "./App.css";
 import Services from "./components/landing/Services";
 import TextScrolling from "./components/landing/textScrolling";
 import ThreeFiberBox from "./components/landing/threeFiberBox";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 767);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 0);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="App">
-      <Layout>
-        <Cursor />
-        <Banner />
-        <ScrollTrigered />
-        <ImageViewer />
-        <FeaturedWork />
-        <Services />
-        <TextScrolling />
-        <LineofGitar />
-        <AboutSection />
-        <ThreeFiberBox />
-        <ContactForm />
-      </Layout>
+      {isSmallScreen ? (
+        <div className="mobile-view">
+          <p>Its under the development</p>
+          <p>Please use Desktop View</p>
+        </div>
+      ) : (
+        <Layout>
+          <Cursor />
+          <Banner />
+          <ScrollTrigered />
+          <ImageViewer />
+          <FeaturedWork />
+          <Services />
+          <TextScrolling />
+          <LineofGitar />
+          <AboutSection />
+          <ThreeFiberBox />
+          <ContactForm />
+        </Layout>
+      )}
     </div>
   );
 }
