@@ -1,0 +1,310 @@
+.banner-content {
+  background: rgb(27, 41, 112);
+  background: linear-gradient(
+    41deg,
+    rgba(27, 41, 112, 1) 0%,
+    rgba(5, 9, 30, 1) 50%,
+    rgba(2, 3, 6, 1) 100%
+  );
+  overflow: hidden;
+}
+.intro-text {
+  animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s 1 normal forwards
+    running dzpZbq;
+  z-index: 1;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.intro-text h1 {
+  margin: -4px 0px;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 140%;
+  font-family: "Mandatory Plaything";
+}
+.intro-text p {
+  font-size: 16px;
+  margin: 0px;
+  line-height: 150%;
+}
+.scroller-title {
+  font-size: 16vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: "Mandatory Plaything";
+  font-weight: bold;
+  margin: 0;
+}
+.scroller-content,
+.image-content {
+  overflow: hidden;
+}
+.image-viewer {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.feature-content h2 {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Mandatory Plaything";
+}
+.feature-content p {
+  font-size: 24px;
+  letter-spacing: 0.4px;
+  margin: 0;
+  font-weight: 500;
+  line-height: 34px;
+}
+.about-title h1 {
+  font-size: 8vw;
+  font-weight: bold;
+  font-family: "Mandatory Plaything";
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+.about-content-container img {
+  max-width: 504px;
+  width: 100%;
+  height: min-content;
+  overflow: hidden;
+  height: 720px;
+  border-radius: 300px;
+  aspect-ratio: 0.7 / 1;
+}
+.about-content-container,
+.about-content-container img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about-content-container h2 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.about-content-container p {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.4px;
+  line-height: 34px;
+  margin-bottom: 10px;
+  max-width: 922px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --------------------- featured work -------------------------- */
+.featured-work-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.featured-work-lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  height: min-content;
+  overflow: hidden;
+  padding: 70px 25px 0;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.featured-card {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #eaeaec;
+}
+.featured-card .link-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.featured-card .img-box {
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+.featured-card .img-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.featured-card:hover .img-box img {
+  transform: scale(1.1);
+}
+.featured-card .content {
+  background: #f5f5f7;
+  padding: 0 26px 0 26px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.featured-card .content .title {
+  font-size: 20px;
+  margin: 0 0 6px;
+  line-height: 28px;
+  color: var(--dark);
+  font-weight: 600;
+  letter-spacing: 0;
+  font-family: var(--font_instrument);
+  text-transform: uppercase;
+}
+.featured-card .content .subtitle {
+  margin: 0;
+  font-size: 18px;
+  color: var(--paragraph);
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 500;
+  font-family: var(--font_instrument);
+}
+.featured-card .content .date {
+  font-size: 16px;
+  display: block;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  border-radius: 30px;
+  color: var(--paragraph);
+  background: rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 10px 20px;
+}
+/* --------------------------------------------------- */
+.about-img-viewer-content {
+  overflow: hidden;
+}
+.about-img-viewer-content img {
+  height: 900px;
+  width: 100%;
+  object-fit: cover;
+}
+/* --------------------------------------------------- */
+.lineofgitar {
+  width: 100%;
+  background: #f5f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* --------------------------contact -------------------------- */
+.contact-sa .box {
+  padding: 120px 60px;
+  background-image: url(../../assets/gr-back.png);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.contact-sa .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.contact-sa .contact-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.contact-sa .contact-form label .star {
+  color: red;
+  padding-left: 5px;
+}
+
+.contact-sa .contact-form input,
+.contact-sa .contact-form textarea {
+  color: #fff;
+  background: transparent;
+  width: 100%;
+  padding: 0 0 10px;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+}
+
+.contact-sa .contact-form button {
+  background: transparent;
+  color: #fff;
+}
+/* --------------------------------------------------- */
+.cursor {
+  height: 8px;
+  width: 8px;
+  background: #f5f5f7;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 1000;
+  mix-blend-mode: difference;
+}
+.services-content h1 {
+  overflow: hidden;
+  font-size: 5vw;
+  margin-bottom: 40px;
+  color: #000;
+}
+.services-content h1 span {
+  display: inline-block;
+  font-family: "Mandatory Plaything";
+}
+.services-content p {
+  color: #000;
+  font-size: 4vw;
+  line-height: 1;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* --------------------------------------------------- */
+.text-scroll-content {
+  background: lawngreen;
+  color: #000;
+  padding: 20px 0;
+  overflow-x: hidden;
+}
+.text-scroll-title {
+  gap: 10px;
+}
+.text-scroll-title h1 {
+  font-size: 3vw;
+  margin: 0 20px;
+}
+.text-scroll-title img {
+  width: 40px;
+  height: 40px;
+}
+.Animated-box-content {
+  height: 60vh;
+  width: 100%;
+}
