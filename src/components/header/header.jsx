@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./style.css";
 import gsap from "gsap";
+import logo from "../../assets/logo.svg";
 
 const Header = () => {
   const logoRef = useRef(null);
@@ -59,10 +60,7 @@ const Header = () => {
       <div className="container">
         {/* Logo */}
         <a className="logo" href="#" ref={logoRef}>
-          <img
-            src="https://uithemez.com/i/hubfolio_HTML/digital_studio/assets/imgs/Logo-light.svg"
-            alt="logo"
-          />
+          <img src={logo} alt="logo" />
         </a>
 
         {/* Navbar links */}

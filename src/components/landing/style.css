@@ -208,6 +208,9 @@
   align-items: center;
   justify-content: center;
 }
+.lineofContent {
+  position: relative;
+}
 /* --------------------------contact -------------------------- */
 .contact-sa .box {
   padding: 120px 60px;
@@ -305,6 +308,8 @@
   height: 40px;
 }
 .Animated-box-content {
-  height: 60vh;
+  height: 500px;
   width: 100%;
+  position: relative;
 }
+/* ------------------------ bg animate ------------------------------ */

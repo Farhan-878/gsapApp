@@ -7,10 +7,11 @@ import {
   EffectComposer,
   ToneMapping,
 } from "@react-three/postprocessing";
+import BackgroundAnimate from "../bganimate/bgAnimate";
 
 const ThreeFiberBox = () => {
   return (
-    <div className="Animated-box-content">
+    <div className="Animated-box-content banner-content">
       <Canvas flat camera={{ fov: 20 }}>
         <OrbitControls />
         <ambientLight />
@@ -25,6 +26,7 @@ const ThreeFiberBox = () => {
           <ToneMapping adaptive={true} />
         </EffectComposer>
       </Canvas>
+      <BackgroundAnimate fill={"#fff"} />
     </div>
   );
 };

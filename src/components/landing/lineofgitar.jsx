@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
+import BackgroundAnimate from "../bganimate/bgAnimate";
 
 const LineofGitar = () => {
   const lineOfGuitarRef = useRef(null);
@@ -46,15 +47,22 @@ const LineofGitar = () => {
   }, []);
 
   return (
-    <div className="lineofgitar" id="lineofgitar-section" ref={lineOfGuitarRef}>
-      <svg width="1200" height="200">
-        <path
-          ref={pathRef}
-          d="M 10 100 Q 600 100 1200 100"
-          stroke="#000"
-          fill="transparent"
-        />
-      </svg>
+    <div className="lineofContent">
+      <div
+        className="lineofgitar"
+        id="lineofgitar-section"
+        ref={lineOfGuitarRef}
+      >
+        <svg width="1200" height="200">
+          <path
+            ref={pathRef}
+            d="M 10 100 Q 600 100 1200 100"
+            stroke="#000"
+            fill="transparent"
+          />
+        </svg>
+      </div>
+      <BackgroundAnimate fill={"#000"} />
     </div>
   );
 };
