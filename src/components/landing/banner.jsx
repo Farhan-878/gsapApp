@@ -78,8 +78,7 @@ const Banner = () => {
               <div className="adjust">FRONT-END SOFTWARE ENGINEER</div>
             </div>
             <h1 className="banner-title text-white  text-uppercase">
-              We Creating A GSAP Portfolio for Beginners
-            </h1>
+ We Create Three.js and GSAP Portfolio Projects.            </h1>
           </div>
           <div className="col-md-6">
             <img
